@@ -2,6 +2,11 @@
   hosts: mongodb
   tasks:
   - name: Install the nginx rpm from a remote repo
-    ansible.builtin.nginx:
-     state: present
+    ansible.builtin.yum:
+     name: nginx
+     state: installed
+  - name: Start service , if not started
+    ansible.builtin.service:
+     name: nginx
+     state: started   
      

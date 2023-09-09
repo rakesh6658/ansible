@@ -8,5 +8,5 @@
   - name: Start service , if not started
     ansible.builtin.service:
      name: nginx
-     state: started   
+     state: stopped   
      

@@ -1,10 +1,8 @@
 - name: installing nginx
   hosts: mongodb
   tasks:
-  - name: install
-    apt: name=nginx state=latest
-  - name: start nginx
-    service:
-     name: nginx
-     state: started
+  - name: Install the nginx rpm from a remote repo
+    ansible.builtin.dnf:
+    name: 'http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm'
+    state: present
      

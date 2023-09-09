@@ -3,4 +3,4 @@
   tasks:
   - name: pinging the node
     ansible.builtin.ping:
-    msg: "welcome to ansible"
+     msg: "welcome to ansible"

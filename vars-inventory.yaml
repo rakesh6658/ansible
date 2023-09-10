@@ -1,5 +1,8 @@
 - name: variables from inventory
-  hosts: mongodb
+  hosts: localhost
+  vars:
+    location: ntp.atlanta.example.com
+    role: proxy.atlanta.example.com
   tasks:
   - name: printing variables from inventory
     ansible.builtin.debug:

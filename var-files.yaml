@@ -3,6 +3,6 @@
   vars_files:
    - rakesh.yaml
   tasks:
-  name: printing the varaibles from rakesh.yaml
-  ansible.builtin.debug:
-   msg: "my name is {{name}} and living in {{location}} and role of {{role}}" 
+  - name: printing the varaibles from rakesh.yaml
+    ansible.builtin.debug:
+     msg: "my name is {{name}} and living in {{location}} and role of {{role}}" 

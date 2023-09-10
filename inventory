@@ -1,5 +1,5 @@
 [mongodb]
 35.153.133.120
 [mongodb:vars]
-location=hydrebad
-role=developer
+location= hydrebad
+role= developer

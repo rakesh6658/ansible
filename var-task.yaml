@@ -5,7 +5,6 @@
    city: hyderabad
   tasks:
   - name: printing nesting
-    ansible.builtin.debug:
     vars:
      city: dubai
      hobbies: movies

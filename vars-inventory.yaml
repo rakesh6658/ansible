@@ -1,0 +1,6 @@
+- name: variables from inventory
+  hosts: localhost
+  tasks:
+  - name: printing variables from inventory
+    ansible.builtin.debug:
+     msg: "my name is rakesh and {{location}} with role {{role}}"

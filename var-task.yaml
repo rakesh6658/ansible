@@ -9,4 +9,5 @@
     vars:
      city: dubai
      hobbies: movies
+    ansible.builtin.debug:
      msg: "my name is {{name}} and living in {{city}} and my hobby is watching {{hobbies}}"

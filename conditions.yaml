@@ -2,6 +2,7 @@
   hosts: localhost
   tasks:
   - name: printing the conditions
+    ansible.builtin.debug:
     vars:
      name: devops
-  when: name == "devops" 
+    when: name == "devops" 

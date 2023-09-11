@@ -1,0 +1,7 @@
+- name: conditions in yaml
+  hosts: localhost
+  tasks:
+  - name: printing the conditions
+  vars:
+   name: devops
+  when: name == "devops" 

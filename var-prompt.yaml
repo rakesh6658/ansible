@@ -1,6 +1,6 @@
 - name: printing prompt
   hosts: localhost
-  vars:
+  vars_prompt:
   - name: USERNAME
     prompt: enter your username
     private: false

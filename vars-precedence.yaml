@@ -11,7 +11,10 @@
   tasks:
   - name: printing the variables from task
     vars:
-     NAME: lakshman-task
+     #NAME: lakshman-task
     ansible.builtin.debug:
-     msg: "my name is {{NAME}}"     
+     msg: "my name is {{NAME}}"   
+
+#1.command-args line
+#2.prompt       
          

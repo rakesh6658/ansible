@@ -3,6 +3,7 @@
   tasks:
   - name: printing the conditions
     ansible.builtin.debug:
+     msg: "my name is rakesh"
     vars:
      name: devops
     when: name == "devops" 

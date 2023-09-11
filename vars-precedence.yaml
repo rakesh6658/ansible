@@ -9,23 +9,9 @@
     prompt: enter your username
     private: false 
   tasks:
-  - name: printing the varaibles from rakesh.yaml
-    ansible.builtin.debug:
-     msg: "my name is {{NAME}}" 
-  - name: printing the varaibles from prompt
-    ansible.builtin.debug:
-     msg: "my name is {{NAME}}" 
   - name: printing the variables from task
     vars:
      NAME: lakshman-task
     ansible.builtin.debug:
      msg: "my name is {{NAME}}"     
-  - name: printing the varaibles from play
-    ansible.builtin.debug:
-     msg: "my name is {{NAME}}"
-  - name: printing the varaibles from inventoty
-    ansible.builtin.debug:
-     msg: "my name is {{NAME}}"
-  - name: printing the varaibles from command-line
-    ansible.builtin.debug:
-     msg: "my name is {{NAME}}"                    
+         

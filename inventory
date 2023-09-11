@@ -1,1 +1,5 @@
-54.156.35.135
+[mongodb]
+52.91.177.117
+[mongodb:vars]
+location: ntp.atlanta.example.com
+role: proxy.atlanta.example.com

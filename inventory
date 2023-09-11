@@ -1,5 +1,4 @@
 [mongodb]
 52.90.50.206
 [mongodb:vars]
-location=hyderabad
-role=developer
+NAME=lakshman-inventory

@@ -1,7 +1,7 @@
 - name: variables with different files
   hosts: mongodb
-  vars:
-   NAME: lakshman-play
+  #vars:
+   #NAME: lakshman-play
   #vars_files:
    #- rakesh.yaml
   #vars_prompt:
@@ -19,6 +19,6 @@
 #2.task
 #3.files
 #4.prompt
-#5.
-#6.      
+#5.play
+#6.inventory      
          

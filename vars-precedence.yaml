@@ -5,4 +5,4 @@
   tasks:
   - name: printing the varaibles from rakesh.yaml
     ansible.builtin.debug:
-     msg: "my name is {{NAME}} and living in {{location}} and role of {{role}}" 
+     msg: "my name is {{NAME}} and living in" 

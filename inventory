@@ -1,5 +1,5 @@
 [mongodb]
 52.90.50.206
 [mongodb:vars]
-location: ntp.atlanta.example.com
-role: proxy.atlanta.example.com
+location: hyderabad
+role: developer

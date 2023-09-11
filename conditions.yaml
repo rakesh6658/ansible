@@ -2,6 +2,6 @@
   hosts: localhost
   tasks:
   - name: printing the conditions
-  vars:
-   name: devops
+    vars:
+     name: devops
   when: name == "devops" 

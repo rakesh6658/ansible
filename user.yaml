@@ -1,5 +1,6 @@
 - name: adding user
   hosts: localhost
+  become: yes
   tasks:
   - name: checking user
     ansible.builtin.command: id roboshop

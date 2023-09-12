@@ -4,6 +4,6 @@
   - name: Add several users
     ansible.builtin.debug:
      msg: "{{item}}"
-  loop:
+    loop:
      - testuser1
      - testuser2

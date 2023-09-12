@@ -2,7 +2,8 @@
   hosts: localhost
   tasks:
   - name: Add several users
-     name: "{{ item }}"
-    loop:
+    ansible.builtin.debug:
+     msg: "{{item}}"
+  loop:
      - testuser1
      - testuser2

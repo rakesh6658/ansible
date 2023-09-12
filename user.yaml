@@ -5,7 +5,8 @@
   - name: checking user
     ansible.builtin.command: id roboshop
     register: out
+    ignore_errors: true
   - name: Add the user 'roboshop' after validating
     when: out.rc == 1
     ansible.builtin.user:
-    name: roboshop
+     name: roboshop

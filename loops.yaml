@@ -1,5 +1,6 @@
 - name: loops in ansible
   hosts: localhost
+  become: yes
   tasks:
   - name: Add several users
     ansible.builtin.debug:

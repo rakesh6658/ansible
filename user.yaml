@@ -6,6 +6,6 @@
     ansible.builtin.command: id roboshop
     register: out
   - name: Add the user 'roboshop' after validating
+    when: out.rc == 1
     ansible.builtin.user:
     name: roboshop
-    when: out.rc == 1

@@ -1,7 +1,10 @@
 - name: adding user
   hosts: localhost
   tasks:
-  - name: Return motd to registered var
+  - name: checking user
     ansible.builtin.command: id roboshop
     register: out
-    
+  - name: Add the user 'roboshop' after validating
+    ansible.builtin.user:
+    name: roboshop
+    when: out.rc == 1

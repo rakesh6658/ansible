@@ -1,0 +1,7 @@
+- name: adding user
+  hosts: localhost
+  tasks:
+  - name: Return motd to registered var
+    ansible.builtin.command: id roboshop
+    register: out
+    

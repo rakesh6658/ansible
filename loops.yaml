@@ -11,8 +11,11 @@
 
   - name: Install the latest version of Apac
     ansible.builtin.yum:
-     name: "{{item}}"
-     state: present
+     name: "{{item.name}}"
+     state: "{{item.state}}"
     loop:
-     - nginx
-     - postfix 
+     - { name: 'nginx', state: absent }
+     - { name: 'postfix', state: absent   }
+     - { name: 'cyrus-sasl-plain', state: present }
+     - { name: 'mailx', state: present }
+     - 

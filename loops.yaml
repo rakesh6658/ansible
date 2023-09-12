@@ -5,5 +5,13 @@
     ansible.builtin.debug:
      msg: "{{item}}"
     loop:
-     - testuser1
-     - testuser2
+     - rakesh
+     - dubbu
+
+  - name: Install the latest version of Apac
+    ansible.builtin.yum:
+     name: "{{item}}"
+     state: present
+    loop:
+     - nginx
+     - postfix 

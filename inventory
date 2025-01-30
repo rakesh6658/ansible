@@ -1,0 +1,13 @@
+12.16.12.162
+15.28.127.16
+[mongodb]
+roboshop-in-dev-db-mongodb-01
+roboshop-in-dev-db-mongodb-02
+[mysql]
+roboshop-us-prod-db-mysql-01
+roboshop-us-prod-db-mysql-02
+roboshop-us-prod-db-mysql-03
+[cart]
+roboshop-eng-qa-app-cart-01
+[user]
+roboshop-us-prod-app-user-01

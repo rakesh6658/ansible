@@ -1,0 +1,26 @@
+{
+"name": "rakesh",
+"dob": "09/12/1662",
+"adress": {
+    "city": "hyd",
+    "country":"india" 
+},
+"adresess": [
+    {
+        "current": {
+            "city": "hyd",
+    "country":"india"
+
+        }
+    },
+    {
+        "permanent": {
+            "city": "atp",
+    "country":"india"
+
+        }
+    },
+
+
+]
+}

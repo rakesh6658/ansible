@@ -1,0 +1,21 @@
+- name: rakesh
+  dob: 06/07/1996
+  -address:
+    current: 
+      city: hyd
+      country: india
+    permanent: 
+      city: hyd
+      country: india  
+- name: rakesh
+  dob: 06/07/1996
+  -address:
+    current: 
+      city: hyd
+      country: india
+    permanent: 
+      city: hyd
+      country: india  
+
+   
+   

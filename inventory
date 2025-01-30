@@ -11,3 +11,9 @@ roboshop-us-prod-db-mysql-03
 roboshop-eng-qa-app-cart-01
 [user]
 roboshop-us-prod-app-user-01
+[db:children]
+mongodb
+mysql
+[app:children]
+cart
+user

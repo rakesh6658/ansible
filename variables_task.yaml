@@ -1,0 +1,13 @@
+- name: variables from task
+  hosts: mongodb
+  vars:
+    Name: abhi-play
+    place: gotlur
+    city: hyd
+  tasks:
+  - name: printing variables from tasks
+    vars:
+      Name: abhi-task #overriding
+    ansible.builtin.debug:
+      msg: my name is {{Name}}, belongs to {{place}}, working in {{working}}  
+

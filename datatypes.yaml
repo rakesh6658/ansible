@@ -1,0 +1,7 @@
+- name: printing datatypes
+  hosts:
+  my_string: "Hello, Ansible!"
+  tasks:
+  - name: printing string
+    ansibile.builtin.debug:
+      msg: welcome to datatypes {{my_string}}

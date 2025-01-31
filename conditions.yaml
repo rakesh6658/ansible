@@ -1,12 +1,16 @@
 - name: checking user exists or not,create if not exists
   hosts: mongodb
+  become: yes
   tasks:
   - name: checking user exits or not 
-    ansible.builtin.command: id root
+    ansible.builtin.command: id roboshop
     register: out
     ignore_errors: true
   - name: printing the output
     ansible.builtin.debug:
       msg: "{{out}}" 
+  - name: creating user roboshop
+    ansible.builtin.command: useradd roboshop
+    when: out.rc !=0    
 
       

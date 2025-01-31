@@ -1,7 +1,7 @@
 - name: variables at play level
   hosts: mongodb
   vars:
-    Name: abhi
+    Name: abhi-play
     place: vempalli
     working: hyd
   tasks:

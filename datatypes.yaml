@@ -1,7 +1,31 @@
 - name: printing datatypes
   hosts:
-  my_string: "Hello, Ansible!"
+  vars:
+  - age: 20 # number
+  - isdevops: true # boolean
+  - my_string: "Hello, Ansible!"
+  - names:
+    - rakesh
+    - dubbu
+    - ram
+  - places:
+     city: hyd
+     vill: gotlur
+     country: ind  
   tasks:
-  - name: printing string
-    ansibile.builtin.debug:
-      msg: welcome to datatypes {{my_string}}
+  - name: print number variable
+    ansible.builtin.debug:
+      msg: "{{age}}"
+  - name: print String variable
+    ansible.builtin.debug:
+      msg: "{{my_string}}"
+  - name: print Boolean variable
+    ansible.builtin.debug:
+      msg: "{{isdevops}}"
+  - name: print List variable
+    ansible.builtin.debug:
+      msg: "{{names}}"
+  - name: print Map variable
+    ansible.builtin.debug:
+      msg: "{{places}}"
+  

@@ -11,6 +11,6 @@
       msg: "{{out}}" 
   - name: creating user roboshop
     ansible.builtin.command: useradd roboshop
-    when: out.rc !=0    
+    when: out.rc == 1    
 
       

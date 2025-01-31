@@ -1,6 +1,6 @@
 [mongodb]
 roboshop-in-dev-db-mongodb-01.joindevops.store
 [mongodb:vars]
-Name: abhi-inventory
-place: vempalli
-working: hyd
+Name=abhi-inventory
+place=vempalli
+working=hyd

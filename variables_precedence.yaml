@@ -1,0 +1,16 @@
+- name: variables precedence
+  hosts: mongodb
+  vars:
+   Name: abhi-play
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: Name
+    prompt: Enter your name
+    private: false
+  tasks:
+  - name: printing variables from tasks
+    vars:
+      Name: abhi-task #overriding
+    ansible.builtin.debug:
+      msg: my name is {{Name}}   

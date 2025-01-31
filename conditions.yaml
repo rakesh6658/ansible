@@ -2,7 +2,7 @@
   hosts: mongodb
   tasks:
   - name: checking user exits or not 
-    ansible.builtin.command: id roboshop
+    ansible.builtin.command: id root
     register: out
     ignore_errors: true
   - name: printing the output

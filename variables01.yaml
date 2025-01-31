@@ -1,0 +1,12 @@
+- name: variables at play level
+  hosts: mongodb
+  vars:
+    name: rakesh
+    place: gotlur
+    working: hyd
+  tasks:
+  - name: printing the variables
+    ansible.builtin.debug:
+      msg: my name is {{name}}, belongs to {{place}}, working in hyd  
+
+

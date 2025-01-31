@@ -1,0 +1,6 @@
+- name: variables in inventory
+  hosts: mongodb
+  tasks:
+  - name: printing variables in inventory
+    ansible.builtin.debug:
+      msg: my name is {{Name}}, belongs to {{place}}, working in {{working}} 

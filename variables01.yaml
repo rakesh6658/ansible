@@ -7,6 +7,6 @@
   tasks:
   - name: printing the variables
     ansible.builtin.debug:
-      msg: my name is {{Name}}, belongs to {{place}}, working in hyd  
+      msg: my name is {{Name}}, belongs to {{place}}, working in {{working}}  
 
 

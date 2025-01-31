@@ -1,0 +1,8 @@
+- name: variables at files
+  hosts: mongodb
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: printing variables from files
+    ansible.builtin.debug:
+      msg: my name is {{Name}}, belongs to {{place}}, working in {{working}}

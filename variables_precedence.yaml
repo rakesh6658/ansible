@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
    Name: abhi-play
-  vars_files:
-  - variables.yaml
+  #vars_files:
+  #- variables.yaml
   #vars_prompt:
   #- name: Name
     #prompt: Enter your name
@@ -17,4 +17,6 @@
   #1.commandline
   #2.prompt  
   #3.task  
+  #4.files
+
 

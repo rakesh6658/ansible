@@ -1,5 +1,5 @@
 - name: printing datatypes
-  hosts:
+  hosts: mongodb
   vars:
   - age: 20 # number
   - isdevops: true # boolean

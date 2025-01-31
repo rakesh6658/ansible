@@ -10,10 +10,11 @@
     #private: false
   tasks:
   - name: printing variables from tasks
-    vars:
-      Name: abhi-task #overriding
+    #vars:
+      #Name: abhi-task #overriding
     ansible.builtin.debug:
       msg: my name is {{Name}}   
   #1.commandline
-  #2.prompt    
+  #2.prompt  
+  #3.task  
 

@@ -14,7 +14,7 @@
       state: "{{item.state}}" 
     loop:
       - { name: 'nginx', state: 'installed' }
-      - { name: 'git', state: 'installed' }        
+      - { name: 'java', state: 'installed' }        
 
    
 

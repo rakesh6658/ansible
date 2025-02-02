@@ -7,4 +7,16 @@
     loop:
       - rakesh
       - dubbu
-      - hyd  
+      - hyd 
+  - name: installing nginx and git
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}" 
+    loop:
+      - { name: 'nginx', state: 'installed' }
+      - { name: 'git', state: 'installed' }        
+
+   
+
+
+       

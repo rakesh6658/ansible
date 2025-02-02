@@ -9,6 +9,7 @@
       - dubbu
       - hyd 
   - name: installing nginx and git
+    become: yes
     ansible.builtin.yum:
       name: "{{item.name}}"
       state: "{{item.state}}" 
